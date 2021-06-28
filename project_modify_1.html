@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himangshu Gym fitness</title>
+</head>
+<link rel="stylesheet" href="https://fonts.google.com/specimen/Baloo+2">
+<link rel="stylesheet" href="CSS/project1.css">
+<style>
+    /* CSS Reset */
+    body {
+        color: whitesmoke;
+        margin: 0px;
+        padding: 0px;
+        background: url('Image/img-1.jpg');
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 104px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .mid {
+    background-color: rgb(79 22 83 / 64%);
+    display: block;
+    width: 43%;
+    padding-left: 0px;
+    margin: 21px auto;
+    /* border: 2px solid green; */
+}
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid blueviolet; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 20px 15px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: blueviolet;
+    }
+
+    .btn {
+        font-family: 'Baloo+2', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid rgb(153, 96, 96);
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btnn{
+        font-family: 'Baloo+2', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid rgb(153, 96, 96);
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(129, 50, 50);
+    }
+
+    .container {
+       
+        margin: 106px 80px;
+        padding: 5px;
+        width: 29%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo+2', cursive;
+        text-align: center;
+        display: block;
+        width: 331px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 8px auto;
+        font-size: 15px;
+        border-radius: 8px;
+        background-color: black;
+        color: blueviolet;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 56%;
+        margin: 20px auto;
+    }
+
+    @media(max-width:900px){
+        .navbar li {
+        display: inline-block;
+        font-size: 15px;
+    }
+    .btn {
+    font-family: 'Baloo+2', cursive;
+    margin: 1px 4px;
+    background-color: black;
+    color: white;
+    padding: 0px 8px;
+    border: 2px solid rgb(153, 96, 96);
+    border-radius: 11px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.form-group input  {
+    font-family: 'Baloo+2', cursive;
+    text-align: center;
+    display: block;
+    width: 201px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 6px auto;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: black;
+    color: blueviolet;
+}
+.left img {
+    width: 48px;
+    filter: invert(100%);
+}
+.left div{
+    line-height: 4px;
+    font-size: 8px;
+    text-align: center;
+}
+    }
+@media(max-width:640px){
+    .form-group input {
+    font-family: 'Baloo+2', cursive;
+    text-align: center;
+    display: block;
+    width: 159px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 6px auto;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: black;
+    color: blueviolet;
+}
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 7px;
+}
+.navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 10px;
+    }
+    .btn {
+    font-family: 'Baloo+2', cursive;
+    margin: 1px 3px;
+    background-color: black;
+    color: white;
+    padding: 0px 6px;
+    border: 2px solid rgb(153, 96, 96);
+    border-radius: 11px;
+    font-size: 7px;
+    cursor: pointer;
+}
+.btnn {
+    font-family: 'Baloo+2', cursive;
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 2px 14px;
+    border: 2px solid rgb(153, 96, 96);
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.container {
+        border:none;
+        margin: 88px 80px;
+        padding: 5px;
+        width: 55%;
+        border-radius: 28px;
+        height: 100vh;
+    }
+    .left {
+    display: inline-block;
+   
+    position: absolute;
+    left: 48px;
+    top: 20px;
+}
+.left div {
+    line-height: 4px;
+    font-size: 10px;
+    text-align: center;
+}
+.container button {
+    display: block;
+    width: 84%;
+    margin: 12px auto;
+}
+.right {
+    position: absolute;
+    right: 10px;
+    top: 43px;
+    display: inline-block;
+    /* border: 2px solid blueviolet; */
+}
+.left img {
+    width: 36px;
+    filter: invert(100%);
+}
+.left div {
+    line-height: 1px;
+    font-size: 9px;
+    text-align: center;
+}
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    top: 20px;
+}
+.mid {
+    /* background-color: rgb(79 22 83 / 64%); */
+    display: block;
+    width: 56%;
+    padding-left: 0px;
+    margin: 21px auto;
+    /* border: 2px solid green; */
+}
+
+user agent stylesheet
+div {
+    display: block;
+}
+
+}
+@media(max-width:374px){
+    .navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 4px;
+}
+.navbar li {
+    display: inline-block;
+    font-size: 14px;
+}
+
+}
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="Image/img4.png" alt="">
+            <div>Himangshu Fitness</div>
+        </div>
+        <!-- mid box for navibar -->
+        <div class="mid">
+            <ul class="navbar">
+
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons  -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Dhemaji now</h1>
+        <form action="noaction.php">
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locolity">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btnn">Sumbit</button>
+        </form>
+    </div>
+</body>
+
+</html>
